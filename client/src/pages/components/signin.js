@@ -359,9 +359,9 @@ const Signin = () => {
                                         <button className="theme-btn-1 btn btn-block w-100" type="submit">SIGN IN</button>
                                     </div>
 
-                                    <div className="go-to-btn mt-20">
+                                    {/* <div className="go-to-btn mt-20">
                                         <a href="#" title="Wishlist" data-bs-toggle ="modal" data-bs-target="#ltn_forget_password_modal"><small>FORGOTTEN YOUR PASSWORD?</small></a>
-                                    </div>
+                                    </div> */}
                                 </form>
 
                                 {/* google login component */}
@@ -386,7 +386,7 @@ const Signin = () => {
  
                        
                        
-                        {/* <div className="col-lg-6">
+                        <div className="col-lg-6">
                             <div className="account-create text-center pt-50">
                                 <h4>DON'T HAVE AN ACCOUNT?</h4>
                                 <p>Add items to your wishlistget personalised recommendations <br />
@@ -395,7 +395,7 @@ const Signin = () => {
                                     <Link to="/signup" className="theme-btn-1 btn black-btn">CREATE ACCOUNT</Link>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>

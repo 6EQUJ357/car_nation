@@ -234,6 +234,7 @@ const Signup = () => {
             userName : "",
             email : "",
             mobileNO : "",
+            userType : "admin",
             password : "",
             confirmPassword : "",
             // checkbox : false
@@ -257,7 +258,7 @@ const Signup = () => {
         onSubmit: async(values, {resetForm})=>{
            
            // const [response, setResponse] = useState({})
-            await axios.post(`${server_access_point}/signup`, values).then(res=>
+            await axios.post(`${server_access_point}/adminsignup`, values).then(res=>
             {
                 alert(res.data.message); 
 

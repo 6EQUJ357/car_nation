@@ -61,11 +61,11 @@ const signUpUserControllerPost= async(req,res)=>{
 
         await saveUser.save();
 
-        res.status(200).json({status : 200, response : true, message: 'User registered successfully' });
+        res.status(200).json({status : 200, response : true, message: 'Account registered successfully' });
     }
     catch (error) {
         console.log("Error in Signup User", error);
-        return res.json({status : 500, response : false, message: "Internal Server Error" });
+        return res.json({status : 500, response : false, message: "Internal Server Error" }); 
     }
 }
 

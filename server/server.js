@@ -11,6 +11,7 @@ const port = process.env.PORT || 5050;
 const DB_connection = process.env.DB_CONNECTION;  
 
 //controllers
+const signUpAdminControllerPost = require("./controller/signUpAdmin-controller");
 const signUpUserController = require("./controller/signUpUser-controller");
 const signInUserController = require("./controller/signInUser-controller");
 const protect_router_myaccount = require("./controller/protected-route-controller");
@@ -51,16 +52,18 @@ app.get("/", (req, res) => {
  
 //signup routes
 
-app.post("/signup", signUpUserController.signUpUserControllerPost)
+app.post("/adminsignup", signUpAdminControllerPost.signUpAdminControllerPost)
+
+app.post("/signup", signUpUserController.signUpUserControllerPost) 
 
 app.get("/getsignupuserdetails", signUpUserController.signUpUserControllerGet)
+ 
 
-
-
+ 
 
 //signin routes
-
-app.post("/signin", signInUserController.signInUserControllerPost)
+ 
+app.post("/signin", signInUserController.signInUserControllerPost) 
 
 
  
